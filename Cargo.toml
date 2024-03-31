@@ -1,0 +1,12 @@
+[package]
+name = "file-listener"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4.37"
+notify = "6.1.1"
+notify-debouncer-full = "0.3.1"
+tokio = { version = "1.37.0", features = ["time"] }
