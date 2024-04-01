@@ -45,16 +45,15 @@ pub fn watch_poller<P: AsRef<Path>>(path: P, string_save_path: String, string_fi
             match res {
                 Ok(event) => {
                     let temp_save_path = string_save_path.clone();
-                    if let new_string_save_path = create_file_name(&string_file_path, &temp_save_path) {
+                    let new_string_save_path = create_file_name(&string_file_path, &temp_save_path);
                         if copy_file(&string_file_path, &new_string_save_path) {
                             println!("File Event Change Type: {:?}", event);
                         } else {
-                            println!("File had no changes");
+                            println!("File had no changes"); 
                         }
-                    } 
                 }
-                Err(e) => {
-                    println!("Error while watching file: {:?}", e)
+                Err(_e) => {
+                    println!("Error while watching file: {:?}", _e)
                 }
             }
         }

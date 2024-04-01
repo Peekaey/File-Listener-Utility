@@ -1,7 +1,6 @@
 mod commands;
 
 use std::{fs, io};
-use notify::{Watcher};
 
 fn main() {
     let mut file_exists = false;
