@@ -4,7 +4,7 @@ Simple file listener to backup and listen for changes to a file in which additio
 
 Mostly written as a small tool to learn rust and currently uses Pollwatcher via the Notify crate for best compatability across platforms as well as NFS support
 [
-https://docs.rs/notify/latest/notify/](https://docs.rs/notify/latest/notify/#known-problems)
+https://docs.rs/notify/latest/notify/#known-problems](https://docs.rs/notify/latest/notify/#known-problems)
 
 ### Usage
 1. ```Cargo Build```
