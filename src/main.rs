@@ -70,7 +70,7 @@ fn main() {
     //Saving File
     commands::copy_file( &original_file_path, &save_path);
     
-    //Handling off initial values
+    //Handing off user supplied values
     let string_save_path = backup_save_path.clone();
     let string_file_path = original_file_path.clone();
     
