@@ -1,4 +1,3 @@
-workspace = { members = ["file-listener"] }
 [package]
 name = "file-listener"
 version = "0.1.0"
